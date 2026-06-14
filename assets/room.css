@@ -263,7 +263,7 @@
   margin-top: 12px;
   font-family: 'Gaegu', sans-serif;
   font-size: 15px;
-  color: #6e6488;
+  color: var(--muted);
   text-align: center;
   min-height: 22px;
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script>if (localStorage.getItem("jose_dark_mode") === "1") document.documentElement.classList.add("dark");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>잡동사니 | Jose's 미니홈피</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/fun.css">
+  <link rel="stylesheet" href="assets/bulb.css">
 </head>
 <body>
 
@@ -29,6 +31,25 @@
   </header>
 
   <main>
+
+    <!-- 전구 줄 토글 -->
+    <section class="card fun-section bulb-section">
+      <h2>💡 불 좀 꺼봐</h2>
+      <p class="fun-desc">줄을 당기면 무슉</p>
+      <div class="bulb-scene" id="bulbScene">
+        <div class="bulb">
+          <div class="bulb-glow"></div>
+          <div class="bulb-glass">
+            <div class="bulb-filament"></div>
+          </div>
+          <div class="bulb-base"></div>
+        </div>
+        <div class="bulb-cord" id="bulbCord">
+          <div class="bulb-knob"></div>
+        </div>
+      </div>
+      <p class="bulb-hint" id="bulbHint">줄을 당겨보세요</p>
+    </section>
 
     <!-- 도토리 뽑기 -->
     <section class="card fun-section">
@@ -64,6 +85,7 @@
   </footer>
 
   <script src="assets/script.js"></script>
+  <script src="assets/bulb.js"></script>
   <script src="assets/fun.js"></script>
 </body>
 </html>

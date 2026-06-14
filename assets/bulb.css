@@ -1,0 +1,133 @@
+.bulb-section {
+  text-align: center;
+  overflow: hidden;
+}
+
+.bulb-scene {
+  position: relative;
+  margin: 12px auto 0;
+  width: 100%;
+  max-width: 360px;
+  height: 220px;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 24px;
+  overflow: hidden;
+  transition: background 0.4s ease;
+}
+
+html.dark .bulb-scene {
+  background: #14101f;
+}
+
+/* ===== 전구 ===== */
+.bulb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bulb-glow {
+  position: absolute;
+  top: 4px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(231,169,60,0.55) 0%, rgba(231,169,60,0) 70%);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+html.dark .bulb-scene .bulb-glow {
+  opacity: 0;
+}
+
+.bulb-glass {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 30px 6px rgba(231,169,60,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+html.dark .bulb-scene .bulb-glass {
+  background: #8a8a9a;
+  box-shadow: none;
+}
+
+.bulb-filament {
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--ink);
+  border-radius: 4px;
+  transform: rotate(15deg);
+  background: rgba(255,255,255,0.4);
+  transition: background 0.4s ease;
+}
+
+html.dark .bulb-scene .bulb-filament {
+  background: rgba(255,255,255,0.05);
+}
+
+.bulb-base {
+  width: 28px;
+  height: 18px;
+  background: #b9b9c4;
+  border: 3px solid var(--ink);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  margin-top: -4px;
+}
+
+/* ===== 당기는 줄 ===== */
+.bulb-cord {
+  position: relative;
+  width: 3px;
+  height: 60px;
+  background: var(--ink);
+  margin-top: 0;
+  cursor: pointer;
+  transform-origin: top center;
+  transition: height 0.15s ease;
+}
+
+.bulb-cord.is-pulling {
+  height: 80px;
+}
+
+.bulb-knob {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pink);
+  border: 3px solid var(--ink);
+}
+
+.bulb-hint {
+  margin-top: 14px;
+  font-family: 'Gaegu', sans-serif;
+  font-size: 15px;
+  color: var(--muted);
+  transition: color 0.4s ease;
+}
+
+@media (max-width: 420px) {
+  .bulb-scene { height: 200px; }
+}

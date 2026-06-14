@@ -11,7 +11,7 @@
 .fun-desc {
   font-family: 'Gaegu', sans-serif;
   font-size: 15px;
-  color: #6e6488;
+  color: var(--muted);
   margin-bottom: 16px;
 }
 

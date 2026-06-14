@@ -17,7 +17,24 @@
   --pink: #f0899f;
   --mint: #6fb6ab;
   --line: #d8cab0;
+  --muted: #6e6488;
   --shadow: 4px 4px 0 var(--ink);
+}
+
+html.dark {
+  --bg: #1c1830;
+  --ink: #ece3d4;
+  --card: #2a2444;
+  --gold: #e7c46a;
+  --pink: #f0899f;
+  --mint: #6fb6ab;
+  --line: #423a5e;
+  --muted: #a99ccf;
+  --shadow: 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+html, body {
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 * {
@@ -107,7 +124,7 @@ a {
   font-family: 'DungGeunMo', monospace;
   font-size: 13px;
   padding: 14px 18px;
-  color: #a99a82;
+  color: var(--muted);
 }
 
 .nav .visit-counter b {
@@ -157,7 +174,7 @@ footer {
   text-align: center;
   font-family: 'DungGeunMo', monospace;
   font-size: 12px;
-  color: #a99a82;
+  color: var(--muted);
   padding: 24px 0;
   border-top: 2px dashed var(--line);
 }
