@@ -1,0 +1,73 @@
+.fun-section {
+  margin: 24px 0;
+}
+
+.fun-section h2 {
+  font-family: 'DungGeunMo', monospace;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.fun-desc {
+  font-family: 'Gaegu', sans-serif;
+  font-size: 15px;
+  color: #6e6488;
+  margin-bottom: 16px;
+}
+
+.fun-btn {
+  font-family: 'DungGeunMo', monospace;
+  font-size: 14px;
+  background: var(--mint);
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.1s ease;
+}
+
+.fun-btn:hover { transform: translate(-2px, -2px); }
+.fun-btn:active { transform: translate(0, 0); box-shadow: none; }
+
+.fortune-result {
+  margin-top: 16px;
+  font-size: 15px;
+  min-height: 24px;
+}
+
+.fortune-result b {
+  color: var(--pink);
+  font-family: 'DungGeunMo', monospace;
+}
+
+.guess-row {
+  display: flex;
+  gap: 10px;
+}
+
+.guess-row input {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 15px;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 100px;
+}
+
+.stamp-btn {
+  font-size: 40px;
+  background: var(--gold);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.08s ease;
+}
+
+.stamp-btn:active {
+  transform: scale(0.9) rotate(-8deg);
+  box-shadow: none;
+}

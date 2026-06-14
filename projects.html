@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트 | Jose's 미니홈피</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/board.css">
+</head>
+<body>
+
+  <div class="titlebar">
+    <span>JOSE's HOMEPAGE ★ ver 1.0</span>
+    <div class="dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 미니홈</a>
+    <a href="about.html">📔 자기소개</a>
+    <a href="projects.html">🗂 프로젝트</a>
+    <a href="fun.html">🎲 잡동사니</a>
+    <a href="guestbook.html">✉️ 일촌평</a>
+    <span class="visit-counter">방문자수 <b id="visitCount">0</b></span>
+  </nav>
+
+  <header class="page-header">
+    <h1>🗂 프로젝트 게시판</h1>
+    <p>제목을 클릭하면 내용이 펼쳐져요. 댓글창 아님 주의 🙅</p>
+  </header>
+
+  <main>
+    <div class="board card">
+      <div class="board-head">
+        <span class="col-no">No.</span>
+        <span class="col-title">제목</span>
+        <span class="col-tag">분류</span>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">05</span>
+          <span class="col-title">Seat-Hunter — AI 발표 코칭 플랫폼 <span class="new">NEW</span></span>
+          <span class="col-tag">풀스택</span>
+        </button>
+        <div class="board-body">
+          <p>
+            발표 연습 중 실시간으로 질문을 던지고 피드백을 주는 AI 코칭 서비스예요.
+            FastAPI + React/Vite 구조이고, Deepgram으로 음성을 텍스트로 바꾸고
+            ElevenLabs로 다시 음성을 만들어 줍니다. 질문 시점을 결정하는
+            LLM+규칙 기반 로직, Redis 세션 상태 관리, Supabase 기록 저장까지
+            전 구간을 직접 만들고 있습니다.
+          </p>
+          <div class="stack">
+            <span>FastAPI</span><span>React</span><span>Redis</span>
+            <span>Supabase</span><span>Deepgram</span><span>ElevenLabs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">04</span>
+          <span class="col-title">KCC_CoRobot — 멀티에이전트 협상 플래닝</span>
+          <span class="col-tag">연구</span>
+        </button>
+        <div class="board-body">
+          <p>
+            두 개의 비전-언어 에이전트가 가상 집(AI2-THOR)에서 협상하며 집안일을
+            나눠 처리하는 연구입니다. 작업 성공률, 효율, 협상 품질 등
+            여러 지표를 직접 설계해서 평가했고, KCC 학회 발표 이후
+            저널(IEEE Access) 확장을 준비하고 있어요.
+          </p>
+          <div class="stack">
+            <span>VLM</span><span>Multi-Agent</span><span>AI2-THOR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">03</span>
+          <span class="col-title">MELT — 전통문화 동화 변환 프로젝트</span>
+          <span class="col-tag">멀티모달</span>
+        </button>
+        <div class="board-body">
+          <p>
+            외국 동화를 한국 전통문화 스타일(김홍도 화풍 삽화 + 한국어 내레이션)로
+            바꿔주는 멀티모달 플랫폼 사업계획입니다. 공유마당, 국립어린이청소년도서관의
+            공공 데이터를 활용했습니다.
+          </p>
+          <div class="stack">
+            <span>Text-to-Image</span><span>TTS</span><span>공공데이터</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">02</span>
+          <span class="col-title">SmolVLM + LoRA — 의료 영상 캡셔닝</span>
+          <span class="col-tag">딥러닝</span>
+        </button>
+        <div class="board-body">
+          <p>
+            SmolVLM-256M-Instruct에 LoRA를 붙여 의료 영상(NurViD) 캡셔닝을
+            파인튜닝했습니다. rank 4/8/16/32로 실험하면서 METEOR, CIDEr-D
+            점수 변화를 비교했고, rank=16에서 의미있는 개선을 확인했습니다.
+          </p>
+          <div class="stack">
+            <span>LoRA</span><span>PEFT</span><span>GPT-4o-mini</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">01</span>
+          <span class="col-title">ResNet-RS 논문 재현 & KITTI 차선 인식</span>
+          <span class="col-tag">과제</span>
+        </button>
+        <div class="board-body">
+          <p>
+            Bello et al. (2021)의 ResNet-RS를 처음부터 구현해 ImageNet-100에서
+            재현했습니다(SEBlock, EMA, Mixup/CutMix, AMP 적용).
+            KITTI Odometry 데이터셋으로는 베이지안 차선 인식과
+            딥러닝(UFLD) 방식을 비교하는 미들텀 과제를 진행했어요.
+          </p>
+          <div class="stack">
+            <span>PyTorch</span><span>ImageNet-100</span><span>KITTI</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    made with ♡ by Jose · github pages · 2026
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="assets/board.js"></script>
+</body>
+</html>

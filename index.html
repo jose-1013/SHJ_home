@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose's 미니홈피</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/room.css">
+</head>
+<body>
+
+  <div class="titlebar">
+    <span>JOSE's HOMEPAGE ★ ver 1.0</span>
+    <div class="dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 미니홈</a>
+    <a href="about.html">📔 자기소개</a>
+    <a href="projects.html">🗂 프로젝트</a>
+    <a href="fun.html">🎲 잡동사니</a>
+    <a href="guestbook.html">✉️ 일촌평</a>
+    <span class="visit-counter">방문자수 <b id="visitCount">0</b></span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Jose의 방에 놀러오세요</h1>
+    <p>가구를 눌러서 이곳저곳 둘러봐 주세요 — AI 연구도 하고, 옷도 만들고, 가끔 딴짓도 합니다.</p>
+  </header>
+
+  <main>
+    <div class="profile-card card">
+      <div class="profile-avatar">🧑‍💻</div>
+      <div class="profile-info">
+        <h2>Jose</h2>
+        <p class="profile-tag">AI융합학부 · 학석사연계</p>
+        <p class="profile-desc">
+          성신여자대학교 AI융합학부에서 멀티모달 AI와 비전-언어 모델을 공부하면서,
+          동시에 발표 코칭 서비스 <b>Seat-Hunter</b>를 만들고 있습니다.
+          진지한 연구와 장난스러운 잡동사니, 둘 다 챙기는 걸 좋아해요.
+        </p>
+        <div class="profile-tags">
+          <span>#VLM</span>
+          <span>#멀티에이전트</span>
+          <span>#FastAPI</span>
+          <span>#React</span>
+          <span>#한국사덕후</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 픽셀 미니룸 ===== -->
+    <section class="room-wrap card">
+      <h3 class="room-title">🛋️ Jose의 방 (클릭해보세요)</h3>
+      <div class="room" id="room">
+
+        <!-- 창문 -->
+        <a href="fun.html" class="room-item window" data-label="창문 — 잡동사니 보러가기">
+          <div class="window-frame">
+            <div class="window-pane"></div>
+            <div class="window-pane"></div>
+            <div class="window-pane"></div>
+            <div class="window-pane"></div>
+          </div>
+        </a>
+
+        <!-- 책장 -->
+        <a href="projects.html" class="room-item bookshelf" data-label="책장 — 프로젝트 모음">
+          <div class="shelf-row"></div>
+          <div class="shelf-row"></div>
+          <div class="shelf-row"></div>
+        </a>
+
+        <!-- 책상 + 컴퓨터 -->
+        <a href="about.html" class="room-item desk" data-label="책상 — 자기소개 다이어리">
+          <div class="monitor"><div class="screen">JOSE</div></div>
+          <div class="desk-top"></div>
+          <div class="desk-leg l"></div>
+          <div class="desk-leg r"></div>
+        </a>
+
+        <!-- 우체통 -->
+        <a href="guestbook.html" class="room-item mailbox" data-label="우체통 — 일촌평 남기기">
+          <div class="mailbox-body"></div>
+          <div class="mailbox-flag"></div>
+          <div class="mailbox-pole"></div>
+        </a>
+
+        <!-- 화분 (장식, 클릭시 토스트) -->
+        <button class="room-item plant" id="plantBtn" data-label="화분 — 그냥 눌러봐">
+          <div class="pot"></div>
+          <div class="leaf l1"></div>
+          <div class="leaf l2"></div>
+          <div class="leaf l3"></div>
+        </button>
+
+        <div class="floor"></div>
+      </div>
+      <p class="room-hint" id="roomHint">가구에 마우스를 올리면 안내가 나와요!</p>
+    </section>
+
+    <div id="plantToast" class="toast">🌱 물 줬어요! (안 줘도 안 죽음)</div>
+  </main>
+
+  <footer>
+    made with ♡ by Jose · github pages · 2026
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="assets/room.js"></script>
+</body>
+</html>

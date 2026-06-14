@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 | Jose's 미니홈피</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/diary.css">
+</head>
+<body>
+
+  <div class="titlebar">
+    <span>JOSE's HOMEPAGE ★ ver 1.0</span>
+    <div class="dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 미니홈</a>
+    <a href="about.html">📔 자기소개</a>
+    <a href="projects.html">🗂 프로젝트</a>
+    <a href="fun.html">🎲 잡동사니</a>
+    <a href="guestbook.html">✉️ 일촌평</a>
+    <span class="visit-counter">방문자수 <b id="visitCount">0</b></span>
+  </nav>
+
+  <header class="page-header">
+    <h1>📔 자기소개 다이어리</h1>
+    <p>일기장을 넘기듯 한 장씩 클릭해서 읽어보세요.</p>
+  </header>
+
+  <main>
+    <div class="diary" id="diary">
+
+      <article class="diary-page is-active">
+        <div class="diary-meta">PAGE 1 · 지금</div>
+        <h2>AI랑 옷, 둘 다 좋아하는 사람</h2>
+        <p>
+          성신여자대학교 AI융합학부에서 학석사 연계과정으로 공부하고 있어요.
+          비전-언어 모델(VLM)의 불확실성, 멀티에이전트 플래닝 같은 주제에 관심이 많고,
+          요즘은 발표 코칭 서비스 <b>Seat-Hunter</b> 프로젝트의 백엔드를 만지고 있습니다.
+        </p>
+        <p>
+          요즘은 발표 코칭 서비스 <b>Seat-Hunter</b> 프로젝트의 백엔드를 만지고 있고,
+          코드 리뷰할 때 디테일을 꼼꼼히 챙기는 편입니다.
+        </p>
+      </article>
+
+      <article class="diary-page">
+        <div class="diary-meta">PAGE 2 · 연구</div>
+        <h2>연구실에서는 이런 걸 해요</h2>
+        <ul>
+          <li><b>KCC_CoRobot</b> — 두 AI가 서로 협상하면서 집안일을 나누는 멀티에이전트 플래닝 연구. 학회 발표 후 IEEE Access로 확장 준비 중.</li>
+          <li><b>MELT</b> — 외국 동화를 한국 전통문화 스타일(김홍도 화풍, 한국어 내레이션)로 바꿔주는 멀티모달 프로젝트.</li>
+          <li><b>SmolVLM + LoRA</b> — 의료 영상 캡셔닝을 위한 LoRA 파인튜닝. rank/alpha 스케일링까지 직접 파봤습니다.</li>
+        </ul>
+      </article>
+
+      <article class="diary-page">
+        <div class="diary-meta">PAGE 3 · 만든 것들</div>
+        <h2>만들면서 배우는 타입</h2>
+        <p>
+          FastAPI + React로 풀스택을 직접 짜는 걸 좋아해요.
+          Seat-Hunter에서는 Deepgram STT, ElevenLabs TTS, Redis 세션 관리, Supabase까지
+          한 사이클을 다 만져봤습니다. 버그 잡을 때의 그 쾌감 때문에 계속 하는 듯.
+        </p>
+        <p>
+          그 외에 KITTI 데이터셋으로 차선 인식 미들텀, ResNet-RS 논문 직접 재현 같은
+          "이론을 손으로 확인하는" 과제들도 좋아합니다.
+        </p>
+      </article>
+
+      <article class="diary-page">
+        <div class="diary-meta">PAGE 4 · 딴짓</div>
+        <h2>코드 밖에서는</h2>
+        <p>
+          한국사 이야기를 즐겨 읽고, 가끔 음악을 분석하거나 글을 씁니다.
+          진지한 연구와 장난스러운 잡동사니를 같은 비중으로 좋아하는 편이라,
+          이 홈페이지에도 그 둘이 섞여 있어요. <b>잡동사니</b> 탭에서 확인해보세요.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="diary-nav">
+      <button id="prevPage" class="diary-btn">◀ 이전 장</button>
+      <div class="diary-dots" id="diaryDots"></div>
+      <button id="nextPage" class="diary-btn">다음 장 ▶</button>
+    </div>
+  </main>
+
+  <footer>
+    made with ♡ by Jose · github pages · 2026
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="assets/diary.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>잡동사니 | Jose's 미니홈피</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/fun.css">
+</head>
+<body>
+
+  <div class="titlebar">
+    <span>JOSE's HOMEPAGE ★ ver 1.0</span>
+    <div class="dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 미니홈</a>
+    <a href="about.html">📔 자기소개</a>
+    <a href="projects.html">🗂 프로젝트</a>
+    <a href="fun.html">🎲 잡동사니</a>
+    <a href="guestbook.html">✉️ 일촌평</a>
+    <span class="visit-counter">방문자수 <b id="visitCount">0</b></span>
+  </nav>
+
+  <header class="page-header">
+    <h1>🎲 잡동사니 서랍</h1>
+    <p>아무 의미 없지만 누르면 재밌는 것들 모음</p>
+  </header>
+
+  <main>
+
+    <!-- 도토리 뽑기 -->
+    <section class="card fun-section">
+      <h2>🌰 오늘의 도토리 운세</h2>
+      <p class="fun-desc">버튼을 누르면 도토리를 하나 까봅니다.</p>
+      <button id="fortuneBtn" class="fun-btn">도토리 까기</button>
+      <div id="fortuneResult" class="fortune-result"></div>
+    </section>
+
+    <!-- 방명록 미리보기 -->
+    <section class="card fun-section">
+      <h2>🔢 숫자 맞추기 (1~10)</h2>
+      <p class="fun-desc">Jose가 생각한 숫자를 맞춰보세요. 시도 횟수는 셉니다.</p>
+      <div class="guess-row">
+        <input type="number" id="guessInput" min="1" max="10" placeholder="1~10">
+        <button id="guessBtn" class="fun-btn">제출</button>
+      </div>
+      <div id="guessResult" class="fortune-result"></div>
+    </section>
+
+    <!-- 클릭 카운터 -->
+    <section class="card fun-section">
+      <h2>🐾 도장 깡깡 찍기</h2>
+      <p class="fun-desc">의미는 없습니다. 그냥 누르세요.</p>
+      <button id="stampBtn" class="stamp-btn">🐾</button>
+      <div class="fortune-result">총 <b id="stampCount">0</b>번 찍음</div>
+    </section>
+
+  </main>
+
+  <footer>
+    made with ♡ by Jose · github pages · 2026
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="assets/fun.js"></script>
+</body>
+</html>
