@@ -39,21 +39,80 @@
 
       <div class="board-row">
         <button class="board-toggle">
-          <span class="col-no">05</span>
-          <span class="col-title">Seat-Hunter — AI 발표 코칭 플랫폼 <span class="new">NEW</span></span>
-          <span class="col-tag">풀스택</span>
+          <span class="col-no">08</span>
+          <span class="col-title">SpeechLab — AI 발표 코칭 플랫폼 <span class="new">NOW</span></span>
+          <span class="col-tag">캡스톤</span>
         </button>
         <div class="board-body">
           <p>
-            발표 연습 중 실시간으로 질문을 던지고 피드백을 주는 AI 코칭 서비스예요.
-            FastAPI + React/Vite 구조이고, Deepgram으로 음성을 텍스트로 바꾸고
-            ElevenLabs로 다시 음성을 만들어 줍니다. 질문 시점을 결정하는
-            LLM+규칙 기반 로직, Redis 세션 상태 관리, Supabase 기록 저장까지
-            전 구간을 직접 만들고 있습니다.
+            캡스톤 디자인 수업 프로젝트. 발표 연습 중 AI가 실시간으로 질문을 던지고
+            피드백을 주는 코칭 서비스입니다. Seat-Hunter 팀 팀장으로 백엔드·프론트엔드 개발을 맡았습니다.
+            FastAPI + React/Vite, Deepgram STT, ElevenLabs TTS, Redis 세션 관리, Supabase 기록 저장.
           </p>
           <div class="stack">
             <span>FastAPI</span><span>React</span><span>Redis</span>
             <span>Supabase</span><span>Deepgram</span><span>ElevenLabs</span>
+          </div>
+          <div class="board-links">
+            <a href="https://github.com/Seat-Hunter" target="_blank">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">07</span>
+          <span class="col-title">공간 분리 환경에서 P2P 협업 기반 멀티에이전트 플래닝</span>
+          <span class="col-tag">연구</span>
+        </button>
+        <div class="board-body">
+          <p>
+            공간이 분리된 환경에서 두 Embodied 에이전트가 Peer-to-Peer 방식으로 협상하며
+            집안일을 나눠 처리하는 멀티에이전트 플래닝 프레임워크입니다.
+            KCC 2026 제출 후 저널 확장을 준비하고 있습니다.
+          </p>
+          <div class="stack">
+            <span>VLM</span><span>Multi-Agent</span><span>AI2-THOR</span><span>KCC 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">06</span>
+          <span class="col-title">MELT — 외국 동화의 한국 전통 스타일 변환 멀티모달 프레임워크</span>
+          <span class="col-tag">연구</span>
+        </button>
+        <div class="board-body">
+          <p>
+            외국 동화를 김홍도 화풍 삽화와 한국어 내레이션으로 변환하는 멀티모달 생성 프레임워크입니다.
+            KCC 2025 학회 제출 후 Electronics (MDPI) 저널로 발전시켰습니다.
+          </p>
+          <div class="stack">
+            <span>Text-to-Image</span><span>TTS</span><span>KCC 2025</span><span>Electronics MDPI</span>
+          </div>
+          <div class="board-links">
+            <a href="https://dori943.github.io/MELT.github.io/" target="_blank">→ 프로젝트 페이지</a>
+            <a href="https://www.mdpi.com/2079-9292/15/10/2083" target="_blank">→ 논문</a>
+            <a href="https://github.com/jose-1013/MELT" target="_blank">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-row">
+        <button class="board-toggle">
+          <span class="col-no">05</span>
+          <span class="col-title">공유 전동킥보드 운행 데이터 예측 — 데이터 증강 기법 영향 평가</span>
+          <span class="col-tag">논문</span>
+        </button>
+        <div class="board-body">
+          <p>
+            심층학습 수업에서 시작한 연구로 대구·경북지회 학술대회에 제출했습니다.
+            공유 전동킥보드 운행 데이터에 다양한 데이터 증강 기법을 적용하고
+            예측 모델 성능에 미치는 영향을 평가했습니다.
+          </p>
+          <div class="stack">
+            <span>Deep Learning</span><span>Data Augmentation</span><span>학술대회</span>
           </div>
         </div>
       </div>
@@ -61,18 +120,20 @@
       <div class="board-row">
         <button class="board-toggle">
           <span class="col-no">04</span>
-          <span class="col-title">KCC_CoRobot — 멀티에이전트 협상 플래닝</span>
-          <span class="col-tag">연구</span>
+          <span class="col-title">V_Tune — 시각장애인을 위한 AI 헬스 도우미 앱 [백엔드]</span>
+          <span class="col-tag">공모전</span>
         </button>
         <div class="board-body">
           <p>
-            두 개의 비전-언어 에이전트가 가상 집(AI2-THOR)에서 협상하며 집안일을
-            나눠 처리하는 연구입니다. 작업 성공률, 효율, 협상 품질 등
-            여러 지표를 직접 설계해서 평가했고, KCC 학회 발표 이후
-            저널(IEEE Access) 확장을 준비하고 있어요.
+            시각장애인이 혼자서도 운동할 수 있도록 AI가 자세를 분석하고 안내하는
+            헬스 도우미 앱입니다. 백엔드 개발을 담당했고,
+            학과 수업에서 시작해 교내 공모전 수상으로 이어졌습니다.
           </p>
           <div class="stack">
-            <span>VLM</span><span>Multi-Agent</span><span>AI2-THOR</span>
+            <span>AI</span><span>백엔드</span><span>교내 공모전 수상</span>
+          </div>
+          <div class="board-links">
+            <a href="https://github.com/jose-1013/V_Tune_BE-develop" target="_blank">→ GitHub</a>
           </div>
         </div>
       </div>
@@ -80,17 +141,13 @@
       <div class="board-row">
         <button class="board-toggle">
           <span class="col-no">03</span>
-          <span class="col-title">MELT — 전통문화 동화 변환 프로젝트</span>
-          <span class="col-tag">멀티모달</span>
+          <span class="col-title">컴퓨터 그래픽스 중간과제</span>
+          <span class="col-tag">수업</span>
         </button>
         <div class="board-body">
-          <p>
-            외국 동화를 한국 전통문화 스타일(김홍도 화풍 삽화 + 한국어 내레이션)로
-            바꿔주는 멀티모달 플랫폼 사업계획입니다. 공유마당, 국립어린이청소년도서관의
-            공공 데이터를 활용했습니다.
-          </p>
-          <div class="stack">
-            <span>Text-to-Image</span><span>TTS</span><span>공공데이터</span>
+          <p>컴퓨터 그래픽스 수업 중간과제입니다.</p>
+          <div class="board-links">
+            <a href="https://github.com/jose-1013/middle-project" target="_blank">→ GitHub</a>
           </div>
         </div>
       </div>
@@ -98,17 +155,16 @@
       <div class="board-row">
         <button class="board-toggle">
           <span class="col-no">02</span>
-          <span class="col-title">SmolVLM + LoRA — 의료 영상 캡셔닝</span>
-          <span class="col-tag">딥러닝</span>
+          <span class="col-title">SQL을 활용한 의약품 정보 조회 웹 서비스 [백엔드]</span>
+          <span class="col-tag">수업</span>
         </button>
         <div class="board-body">
           <p>
-            SmolVLM-256M-Instruct에 LoRA를 붙여 의료 영상(NurViD) 캡셔닝을
-            파인튜닝했습니다. rank 4/8/16/32로 실험하면서 METEOR, CIDEr-D
-            점수 변화를 비교했고, rank=16에서 의미있는 개선을 확인했습니다.
+            데이터베이스 수업 프로젝트. SQL로 의약품 정보를 조회하는
+            웹 서비스를 개발했습니다. 백엔드를 담당했습니다.
           </p>
           <div class="stack">
-            <span>LoRA</span><span>PEFT</span><span>GPT-4o-mini</span>
+            <span>SQL</span><span>백엔드</span>
           </div>
         </div>
       </div>
@@ -116,18 +172,16 @@
       <div class="board-row">
         <button class="board-toggle">
           <span class="col-no">01</span>
-          <span class="col-title">ResNet-RS 논문 재현 & KITTI 차선 인식</span>
-          <span class="col-tag">과제</span>
+          <span class="col-title">위치기반 Todo List 안드로이드 앱 [팀장]</span>
+          <span class="col-tag">수업</span>
         </button>
         <div class="board-body">
           <p>
-            Bello et al. (2021)의 ResNet-RS를 처음부터 구현해 ImageNet-100에서
-            재현했습니다(SEBlock, EMA, Mixup/CutMix, AMP 적용).
-            KITTI Odometry 데이터셋으로는 베이지안 차선 인식과
-            딥러닝(UFLD) 방식을 비교하는 미들텀 과제를 진행했어요.
+            모바일 프로그래밍 수업 팀 프로젝트. 현재 위치 기반으로 할 일을
+            관리하는 안드로이드 앱을 개발했습니다. 팀장을 맡았습니다.
           </p>
           <div class="stack">
-            <span>PyTorch</span><span>ImageNet-100</span><span>KITTI</span>
+            <span>Android</span><span>위치기반</span>
           </div>
         </div>
       </div>

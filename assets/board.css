@@ -85,6 +85,26 @@
   margin-bottom: 12px;
 }
 
+.board-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.board-links a {
+  font-family: 'DungGeunMo', monospace;
+  font-size: 12px;
+  color: var(--mint);
+  border-bottom: 2px solid var(--mint);
+  transition: color 0.15s;
+}
+
+.board-links a:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
 .stack {
   display: flex;
   flex-wrap: wrap;
